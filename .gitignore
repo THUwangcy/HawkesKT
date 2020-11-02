@@ -203,7 +203,6 @@ venv.bak/
 
 doc/
 *.xlsx
-*.pdf
 *.ppt
 *.pptx
 grid_search.py
