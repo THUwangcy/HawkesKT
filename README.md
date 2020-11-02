@@ -4,8 +4,7 @@
 
 This is our implementation for the paper:
 
-*Chenyang Wang, Weizhi Ma, Min Zhang, Chuancheng Lv, Fengyuan Wan, Taoran Tang, Huijie Lin, Yiqun Liu, and Shaoping Ma. [Temporal Cross-effects in Knowledge Tracing.]() 
-In WSDM'21.
+*Chenyang Wang, Weizhi Ma, Min Zhang, Chuancheng Lv, Fengyuan Wan, Taoran Tang, Huijie Lin, Yiqun Liu, and Shaoping Ma. [Temporal Cross-effects in Knowledge Tracing.]() In WSDM'21.*
 
 **Please cite our paper if you use our codes. Thanks!**
 
