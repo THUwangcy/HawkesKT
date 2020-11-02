@@ -1,0 +1,146 @@
+INFO:root:Namespace(model_name='HawkesKT')
+INFO:root:--------------------------------------------- BEGIN: 2020-11-02 10:17:47 ---------------------------------------------
+INFO:root:
+=====================================
+ Arguments       | Values            
+=====================================
+ batch_size      | 100              
+ dataset         | ASSISTments_12-13
+ dropout         | 0.2              
+ early_stop      | 1                
+ emb_size        | 64               
+ epoch           | 200              
+ eval_batch_size | 100              
+ fold            | 0                
+ gpu             | 1                
+ kfold           | 5                
+ l2              | 0.0              
+ load            | 0                
+ lr              | 0.001            
+ max_step        | 50               
+ metric          | AUC, Accuracy    
+ optimizer       | Adam             
+ random_seed     | 2019             
+ time_log        | 5.0              
+=====================================
+INFO:root:# cuda devices: 1
+INFO:root:Load corpus from ../data/ASSISTments_12-13/Corpus_50.pkl
+INFO:root:# Train: 18191, # Dev: 2021, # Test: 5054
+INFO:root:HawkesKT(
+  (problem_base): Embedding(50918, 1)
+  (skill_base): Embedding(245, 1)
+  (alpha_inter_embeddings): Embedding(490, 64)
+  (alpha_skill_embeddings): Embedding(245, 64)
+  (beta_inter_embeddings): Embedding(490, 64)
+  (beta_skill_embeddings): Embedding(245, 64)
+  (loss_function): BCELoss()
+)
+INFO:root:#params: 385343
+INFO:root:Test Before Training: accuracy:0.4856,auc:0.4829
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1   loss=0.6354 [2.7 s]	 valid=(accuracy:0.7057,auc:0.6781) test=(accuracy:0.7140,auc:0.6751) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 2   loss=0.5774 [2.5 s]	 valid=(accuracy:0.7207,auc:0.7092) test=(accuracy:0.7262,auc:0.7034) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 3   loss=0.5667 [2.6 s]	 valid=(accuracy:0.7261,auc:0.7208) test=(accuracy:0.7301,auc:0.7152) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 4   loss=0.5564 [2.6 s]	 valid=(accuracy:0.7297,auc:0.7312) test=(accuracy:0.7334,auc:0.7244) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 5   loss=0.5497 [2.4 s]	 valid=(accuracy:0.7317,auc:0.7373) test=(accuracy:0.7357,auc:0.7318) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 6   loss=0.5408 [2.4 s]	 valid=(accuracy:0.7334,auc:0.7422) test=(accuracy:0.7374,auc:0.7365) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 7   loss=0.5338 [2.4 s]	 valid=(accuracy:0.7352,auc:0.7463) test=(accuracy:0.7390,auc:0.7404) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 8   loss=0.5307 [2.4 s]	 valid=(accuracy:0.7364,auc:0.7499) test=(accuracy:0.7401,auc:0.7437) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 9   loss=0.5248 [2.4 s]	 valid=(accuracy:0.7370,auc:0.7535) test=(accuracy:0.7410,auc:0.7471) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 10  loss=0.5235 [2.4 s]	 valid=(accuracy:0.7379,auc:0.7552) test=(accuracy:0.7417,auc:0.7491) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 11  loss=0.5203 [2.4 s]	 valid=(accuracy:0.7396,auc:0.7576) test=(accuracy:0.7424,auc:0.7517) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 12  loss=0.5163 [2.4 s]	 valid=(accuracy:0.7406,auc:0.7596) test=(accuracy:0.7430,auc:0.7533) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 13  loss=0.5132 [2.4 s]	 valid=(accuracy:0.7409,auc:0.7611) test=(accuracy:0.7434,auc:0.7548) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 14  loss=0.5122 [2.5 s]	 valid=(accuracy:0.7408,auc:0.7620) test=(accuracy:0.7440,auc:0.7564) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 15  loss=0.5096 [2.6 s]	 valid=(accuracy:0.7420,auc:0.7637) test=(accuracy:0.7447,auc:0.7576) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 16  loss=0.5067 [2.7 s]	 valid=(accuracy:0.7427,auc:0.7645) test=(accuracy:0.7450,auc:0.7587) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 17  loss=0.5051 [2.5 s]	 valid=(accuracy:0.7435,auc:0.7656) test=(accuracy:0.7454,auc:0.7594) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 18  loss=0.5033 [2.5 s]	 valid=(accuracy:0.7439,auc:0.7659) test=(accuracy:0.7457,auc:0.7602) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 19  loss=0.5015 [2.6 s]	 valid=(accuracy:0.7444,auc:0.7666) test=(accuracy:0.7465,auc:0.7609) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 20  loss=0.5006 [2.6 s]	 valid=(accuracy:0.7455,auc:0.7671) test=(accuracy:0.7467,auc:0.7616) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 21  loss=0.4992 [2.7 s]	 valid=(accuracy:0.7448,auc:0.7678) test=(accuracy:0.7474,auc:0.7624) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 22  loss=0.4983 [2.5 s]	 valid=(accuracy:0.7456,auc:0.7687) test=(accuracy:0.7476,auc:0.7631) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 23  loss=0.4950 [2.6 s]	 valid=(accuracy:0.7454,auc:0.7694) test=(accuracy:0.7480,auc:0.7635) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 24  loss=0.4940 [2.6 s]	 valid=(accuracy:0.7456,auc:0.7695) test=(accuracy:0.7482,auc:0.7636) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 25  loss=0.4943 [2.7 s]	 valid=(accuracy:0.7462,auc:0.7698) test=(accuracy:0.7483,auc:0.7639) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 26  loss=0.4912 [2.7 s]	 valid=(accuracy:0.7461,auc:0.7705) test=(accuracy:0.7483,auc:0.7643) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 27  loss=0.4901 [2.7 s]	 valid=(accuracy:0.7464,auc:0.7704) test=(accuracy:0.7486,auc:0.7645) [0.5 s] 
+INFO:root:Epoch 28  loss=0.4896 [2.6 s]	 valid=(accuracy:0.7460,auc:0.7701) test=(accuracy:0.7482,auc:0.7645) [0.6 s] 
+INFO:root:Epoch 29  loss=0.4883 [2.6 s]	 valid=(accuracy:0.7462,auc:0.7704) test=(accuracy:0.7489,auc:0.7647) [0.6 s] 
+INFO:root:Epoch 30  loss=0.4877 [2.5 s]	 valid=(accuracy:0.7465,auc:0.7711) test=(accuracy:0.7481,auc:0.7650) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 31  loss=0.4857 [2.5 s]	 valid=(accuracy:0.7461,auc:0.7711) test=(accuracy:0.7483,auc:0.7651) [0.6 s] 
+INFO:root:Epoch 32  loss=0.4857 [2.8 s]	 valid=(accuracy:0.7462,auc:0.7711) test=(accuracy:0.7485,auc:0.7652) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 33  loss=0.4839 [2.7 s]	 valid=(accuracy:0.7463,auc:0.7715) test=(accuracy:0.7487,auc:0.7655) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 34  loss=0.4839 [2.6 s]	 valid=(accuracy:0.7461,auc:0.7708) test=(accuracy:0.7485,auc:0.7651) [0.6 s] 
+INFO:root:Epoch 35  loss=0.4833 [2.7 s]	 valid=(accuracy:0.7459,auc:0.7714) test=(accuracy:0.7487,auc:0.7650) [0.6 s] 
+INFO:root:Epoch 36  loss=0.4811 [2.7 s]	 valid=(accuracy:0.7472,auc:0.7712) test=(accuracy:0.7486,auc:0.7650) [0.5 s] 
+INFO:root:Epoch 37  loss=0.4811 [2.7 s]	 valid=(accuracy:0.7472,auc:0.7716) test=(accuracy:0.7484,auc:0.7653) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 38  loss=0.4797 [2.6 s]	 valid=(accuracy:0.7471,auc:0.7716) test=(accuracy:0.7487,auc:0.7652) [0.6 s] 
+INFO:root:Epoch 39  loss=0.4806 [2.6 s]	 valid=(accuracy:0.7466,auc:0.7712) test=(accuracy:0.7487,auc:0.7646) [0.6 s] 
+INFO:root:Epoch 40  loss=0.4778 [2.7 s]	 valid=(accuracy:0.7474,auc:0.7717) test=(accuracy:0.7486,auc:0.7651) [0.5 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 41  loss=0.4765 [2.8 s]	 valid=(accuracy:0.7477,auc:0.7715) test=(accuracy:0.7486,auc:0.7647) [0.6 s] 
+INFO:root:Epoch 42  loss=0.4770 [2.6 s]	 valid=(accuracy:0.7471,auc:0.7717) test=(accuracy:0.7484,auc:0.7644) [0.5 s] 
+INFO:root:Epoch 43  loss=0.4762 [2.7 s]	 valid=(accuracy:0.7465,auc:0.7713) test=(accuracy:0.7490,auc:0.7646) [0.6 s] 
+INFO:root:Epoch 44  loss=0.4754 [2.7 s]	 valid=(accuracy:0.7471,auc:0.7718) test=(accuracy:0.7483,auc:0.7649) [0.6 s] 
+INFO:root:Save model to ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:Epoch 45  loss=0.4748 [2.7 s]	 valid=(accuracy:0.7470,auc:0.7715) test=(accuracy:0.7489,auc:0.7649) [0.6 s] 
+INFO:root:Epoch 46  loss=0.4743 [2.8 s]	 valid=(accuracy:0.7477,auc:0.7713) test=(accuracy:0.7487,auc:0.7648) [0.6 s] 
+INFO:root:Epoch 47  loss=0.4735 [2.8 s]	 valid=(accuracy:0.7472,auc:0.7711) test=(accuracy:0.7488,auc:0.7643) [0.6 s] 
+INFO:root:Epoch 48  loss=0.4729 [2.6 s]	 valid=(accuracy:0.7465,auc:0.7705) test=(accuracy:0.7485,auc:0.7642) [0.5 s] 
+INFO:root:Epoch 49  loss=0.4726 [2.7 s]	 valid=(accuracy:0.7471,auc:0.7707) test=(accuracy:0.7485,auc:0.7639) [0.5 s] 
+INFO:root:Epoch 50  loss=0.4723 [2.6 s]	 valid=(accuracy:0.7468,auc:0.7707) test=(accuracy:0.7485,auc:0.7640) [0.5 s] 
+INFO:root:Epoch 51  loss=0.4712 [2.6 s]	 valid=(accuracy:0.7461,auc:0.7703) test=(accuracy:0.7486,auc:0.7640) [0.5 s] 
+INFO:root:Epoch 52  loss=0.4706 [2.6 s]	 valid=(accuracy:0.7468,auc:0.7703) test=(accuracy:0.7483,auc:0.7639) [0.6 s] 
+INFO:root:Epoch 53  loss=0.4701 [2.7 s]	 valid=(accuracy:0.7464,auc:0.7703) test=(accuracy:0.7480,auc:0.7634) [0.6 s] 
+INFO:root:Epoch 54  loss=0.4697 [2.8 s]	 valid=(accuracy:0.7462,auc:0.7703) test=(accuracy:0.7480,auc:0.7632) [0.6 s] 
+INFO:root:Epoch 55  loss=0.4699 [2.9 s]	 valid=(accuracy:0.7461,auc:0.7697) test=(accuracy:0.7485,auc:0.7632) [0.6 s] 
+INFO:root:Epoch 56  loss=0.4694 [2.8 s]	 valid=(accuracy:0.7460,auc:0.7698) test=(accuracy:0.7478,auc:0.7633) [0.6 s] 
+INFO:root:Epoch 57  loss=0.4686 [2.5 s]	 valid=(accuracy:0.7465,auc:0.7699) test=(accuracy:0.7473,auc:0.7629) [0.5 s] 
+INFO:root:Epoch 58  loss=0.4682 [2.7 s]	 valid=(accuracy:0.7467,auc:0.7695) test=(accuracy:0.7479,auc:0.7629) [0.6 s] 
+INFO:root:Epoch 59  loss=0.4672 [2.8 s]	 valid=(accuracy:0.7458,auc:0.7696) test=(accuracy:0.7479,auc:0.7627) [0.6 s] 
+INFO:root:Epoch 60  loss=0.4666 [2.7 s]	 valid=(accuracy:0.7471,auc:0.7696) test=(accuracy:0.7475,auc:0.7628) [0.5 s] 
+INFO:root:Epoch 61  loss=0.4682 [2.6 s]	 valid=(accuracy:0.7464,auc:0.7691) test=(accuracy:0.7474,auc:0.7625) [0.5 s] 
+INFO:root:Epoch 62  loss=0.4664 [2.8 s]	 valid=(accuracy:0.7464,auc:0.7692) test=(accuracy:0.7476,auc:0.7627) [0.6 s] 
+INFO:root:Epoch 63  loss=0.4656 [2.4 s]	 valid=(accuracy:0.7458,auc:0.7691) test=(accuracy:0.7473,auc:0.7622) [0.5 s] 
+INFO:root:Epoch 64  loss=0.4653 [2.4 s]	 valid=(accuracy:0.7459,auc:0.7686) test=(accuracy:0.7472,auc:0.7620) [0.5 s] 
+INFO:root:Early stop at 64 based on validation result.
+INFO:root:
+Best Iter(dev)=     44	 valid=(accuracy:0.7471,auc:0.7718) test=(accuracy:0.7483,auc:0.7649) [207.1 s] 
+INFO:root:Best Iter(test)=    33	 valid=(accuracy:0.7463,auc:0.7715) test=(accuracy:0.7487,auc:0.7655) [207.1 s] 
+
+INFO:root:Load model from ../model/HawkesKT/HawkesKT__ASSISTments_12-13__2019__lr=0.001__l2=0.0__fold=0__time_log=5.0.pt
+INFO:root:
+Test After Training: accuracy:0.7483,auc:0.7649
+INFO:root:
+--------------------------------------------- END: 2020-11-02 10:21:17 ---------------------------------------------
