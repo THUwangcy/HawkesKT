@@ -1,6 +1,6 @@
 # HawkesKT
 
-![illustration](./data/_static/idea.pdf)
+![illustration](./data/_static/idea.png)
 
 
 
