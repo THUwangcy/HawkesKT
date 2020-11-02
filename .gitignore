@@ -206,5 +206,4 @@ doc/
 *.pdf
 *.ppt
 *.pptx
-*.csv
 grid_search.py
