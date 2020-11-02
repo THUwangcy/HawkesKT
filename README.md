@@ -28,6 +28,7 @@ pip install -r requirements.txt
 4. Run model, e.g.
 
 ```bash
+cd src
 python main.py --model_name HawkesKT --emb_size 64 --max_step 50 --lr 5e-3 --l2 1e-5 --time_log 5 --gpu 1 --dataset ASSISTments_09-10
 ```
 
