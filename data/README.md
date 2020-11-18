@@ -1,6 +1,8 @@
 # Dataset
 
-* `Preprocess.ipynb` generates datasets from original data files. And the datasets ready to use can be downloaded [here](https://cloud.tsinghua.edu.cn/d/ad8582198c0f4df39d93/).
+Datasets after preprocessing can be downloaded online: [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/ad8582198c0f4df39d93/)
+
+* `Preprocess.ipynb` generates datasets from original data files.
 * `Data Analysis.ipynb` analyzes data to reveal temporal cross-effects in knowledge tracing (conditional mutual information analyses in the empirical study).
 * `Param Analysis.ipynb` loads the dumped parameters and calculates prerequisite scores for each skill.
 
