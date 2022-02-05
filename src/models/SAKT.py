@@ -53,7 +53,7 @@ class SAKT(BaseModel):
 
         y = seq_data
         for block in self.attn_blocks:
-            y = block(mask=1, query=q_data, key=seq_data, values=seq_data)
+            y = block(mask=1, query=q_data, key=y, values=y)
         prediction = self.out(y).squeeze(-1).sigmoid()
 
         out_dict = {'prediction': prediction[:, :-1], 'label': labels[:, 1:].double()}
